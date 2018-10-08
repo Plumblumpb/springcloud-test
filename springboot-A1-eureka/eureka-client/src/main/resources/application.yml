@@ -2,7 +2,7 @@ server:
   port: 8762
 spring:
   application:
-    #    ·şÎñÃû
+    #    å®¢æˆ·ç«¯åç§°
     name: eureka-client
 
 eureka:

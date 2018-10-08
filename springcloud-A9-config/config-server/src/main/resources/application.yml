@@ -3,6 +3,7 @@ spring:
     config:
       server:
         native:
+#          配置文件位置
           search-locations: classpath:/shared
   profiles:
     active: native
