@@ -5,11 +5,21 @@ eureka:
   instance:
     hostname: localhost
   client:
-    # 表示是否注册自身到eureka服务器
+    # 表示是否注册自身到eurekaServer(Server为false)
     registerWithEureka: false
-    # 是否从eureka上获取注册信息
+    # 是否从eureka Server获取其他注册表信息
     fetchRegistry: false
-    # 服务器url
+    # 设置eureka交互服务器url
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+security:
+  basic:
+    enabled: true
+  user:
+    name:  user
+    password: user
+
+
 
